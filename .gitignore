@@ -38,7 +38,7 @@ target/
 # config
 media/
 log/
-helloworld/settings.py
+personalblog/settings.py
 skyblog/migrations/
 
 *.DS_Store

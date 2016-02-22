@@ -1,2 +1,3 @@
-在本地新建文件helloworld/settings.py
-文件内容参照helloworld/settings_template.py进行正确配置
+在本地新建文件personalblog/settings.py
+
+文件内容参照personalblog/settings_template.py进行正确配置

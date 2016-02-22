@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
-from helloworld.base_settings import *
+from .base_settings import *
 
 DEBUG = True
 
