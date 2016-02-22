@@ -6,6 +6,9 @@
     background-color: white;
     padding: 20px;
 }
+.article {
+    position: relative;
+}
 article .tags {
     margin-top: 15px;
 }

@@ -55,6 +55,7 @@ a {
 }    
 .container{
     margin-left: 300px;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 800px) {

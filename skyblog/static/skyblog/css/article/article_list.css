@@ -1,8 +1,7 @@
 .article-header {
     border-left: 5px solid;
-    padding: 15px 0 15px 30px;
+    padding: 10px 0 10px 20px;
     position: relative;
-    height: 30px;
     color: #657b83;
     margin-bottom: 10px;
 }
@@ -11,8 +10,8 @@
     font-size: 28px;
     font-weight: 300;
     line-height: 35px;
-    margin-bottom: 20px;
     transition: color 0.3s;
+    margin-right: 160px;
 }
 .article-summary {
     line-height: 2;
