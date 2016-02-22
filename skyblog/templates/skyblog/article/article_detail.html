@@ -10,7 +10,7 @@
 
 {% block content %}
 <div class="article_main">
-    <article class="article">
+    <article id="article_detail" class="article" data-id="{{ article.id }}">
         {% if article.show_title %}
             <h1>{{ article.title }}</h1>
             <div class="create_at"><time datetime="{{ article.create_at }}">{{ article.create_at }}</time></div>
@@ -31,3 +31,5 @@
     </article>
 </div>
 {% endblock %}
+
+{% block requirejs %}{{ static('skyblog/js/article/article_detail') }}{% endblock %}
