@@ -1,0 +1,194 @@
+body {
+    margin: 0px;
+    font-family: Roboto,Roboto,serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1;
+    color: #666;
+    background: #eee;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+strong {
+    color: #000;
+}
+a {
+    text-decoration:none;
+    color: #666;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+.vertail-line {
+    height: 100%;
+    width: 1px;
+    background-color: #ddd;
+}
+
+.sky-a-normal{
+    text-decoration: none;
+    outline: 0;
+    outline-width: 0;
+    cursor: auto;
+    color: #666;
+}
+
+.leftpanel {
+    display: block;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    background: white;
+}
+.header {
+    display: none;
+    width: 100%;
+    text-align: center;
+    height: 360px;
+}    
+.container{
+    margin-left: 300px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftpanel {
+        display: none;
+    }
+    .header {
+        display: block;
+    }
+    .container {
+        margin-left: 0;
+    }
+    
+}
+
+.overlay {
+    background-color: #000;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+}
+.leftpanel .overlay {
+    height: 140px;
+}
+.header .overlay {
+    height: 110px;
+}
+
+.my-icon {
+    background: url("../img/sky-icon.png") no-repeat;
+    background-size: 100%;
+    border: 2px solid #fff;
+    margin: 0 auto;
+    border-radius: 300px;
+    height: 128px;
+    width: 128px;
+}
+
+.intrude-less {
+    position: absolute;
+    width: 100%;
+}
+.leftpanel .intrude-less {
+    top: 70px;
+}
+.header .intrude-less {
+    top: 10px;
+}
+
+.en-name {
+    font-weight: bolder;
+    font-size: 2em;
+    margin-top: 20px;
+}
+.nick-name {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.motto {
+    color: #999;
+}
+.leftpanel .motto {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.header .motto {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.menus ul {
+    list-style-type: disc;
+    list-style: none;
+    padding: 0px;
+}
+.menus a {
+    min-width: 300px;
+}
+.leftpanel .menus ul {
+    display: block;
+}
+.header .menus ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline;
+}
+.leftpanel .menus li {
+    margin-top: 35px;
+    font-size: 0.9em;
+}
+.header .menus li {
+    display: inline-block;
+    font-size: 0.9em;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.leftpanel .social {
+    margin-top: 70px;
+}
+.header .social {
+    margin-top: 20px;
+}
+.social a {
+    border-radius: 50%;
+    display: inline-block;
+    height: 28px;
+    margin: 0 8px 15px 8px;
+    opacity: 0.7;
+    transition: 0.3s;
+    vertical-align: middle;
+    width: 28px;
+    zoom: 1;
+}
+.social a.github {
+    background: url(../img/github.png) center no-repeat #afb6ca;
+    border: 1px solid #afb6ca;
+}
+.social a.facebook {
+    background: url(../img/facebook.png) center no-repeat #aaf;
+    background-size: 30px;
+}
+.social a.rss {
+    background: url(../img/rss.png) center no-repeat #ef7522;
+    border: 1px solid #ef7522;
+}
+
+.content {
+    min-height: 730px;   
+}
+
+.footer {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}

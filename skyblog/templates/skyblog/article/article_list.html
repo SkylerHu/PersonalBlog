@@ -1,0 +1,54 @@
+{% extends "skyblog/main.html" %}
+
+{% block keywords %}{{ keywords }}{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ static('skyblog/css/article/article_sky.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ static('skyblog/css/article/article_list.css') }}" />
+{% endblock %}
+
+{% block content %}
+<div>
+    <div>
+        {% for article in articles %}
+            <article class="article">
+                <a href="{{ url('article_detail', kwargs={'article_id': article.id})  }}">
+                    <div class="article-header">
+                        <h2 class="title">{{ article.title }}</h2>
+                        <div class="create_at"><time datetime="{{ article.create_at }}">{{ article.create_at }}</time></div>
+                    </div>
+                </a>
+                {% if article.tags %}
+                    <div class="tags">
+                        {% for tag in article.tags %}
+                            <span>{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <div class="horizontal-line"></div>
+                <div class="article-summary">
+                    {{ article.summary }}
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+    <div class="pagination">
+        <div class="step-links">
+            {% if posts.has_previous() %}
+                <a href="?page={{ posts.previous_page_number }}">prev</a>
+            {% else %}
+                <span class='empty'></span>
+            {% endif %}
+            <span class="current">
+                Page {{ posts.number }} of {{ posts.paginator.num_pages }}
+            </span>
+            {% if posts.has_next() %}
+                <a href="?page={{ posts.next_page_number }}">next</a>
+            {% else %}
+                <span class='empty'></span>                             
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+

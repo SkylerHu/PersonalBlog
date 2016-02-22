@@ -1,0 +1,31 @@
+article {
+    min-height: 50px;
+    padding: 10px;
+    background: #fff;
+    margin: 0px 10px 20px 10px;
+}
+article .create_at {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #aaa;
+}
+article time:before {
+    color: #999;
+    content: "\f073";
+    font: 17px FontAwesome;
+    margin-right: 10px;
+}
+article .tags {
+    margin-left: 40px;
+    color: #76d9e5;
+    margin-bottom: 10px;
+}
+article .tags:before {
+    content: url("../../img/tag.png");
+}
+article .tags span {
+    margin-left: 5px;  
+}
+
+

@@ -1,0 +1,15 @@
+.article_main {
+    margin: 0 20px;
+    padding-top: 15px;
+}
+.article_content {
+    background-color: white;
+    padding: 20px;
+}
+article .tags {
+    margin-top: 15px;
+}
+article .create_at {
+    top: 40px;
+    right: 40px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}快乐悲魂的博客{% endblock %}</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta http-equiv="cache-control" content="no-siteapp" />
+        <meta name="author" content="快乐悲魂" />
+        <meta name="keywords" content="{% block keywords %}{% endblock %}" />
+        <meta name="description" content="快乐悲魂(kuailebeihu, Skyler, 胡乐平, HuLeping)的成长之路--技术博客" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+        <meta name="format-detection" content="telephone=no, email=no, adress=yes" />
+
+        <link rel="shortcut icon" href="{{ static('skyblog/img/sky-32.ico') }}" />
+        <link rel="icon" type="image/png" href="{{ static('skyblog/img/sky-icon.png') }}" />
+
+        <link rel="stylesheet" type="text/css" href="{{ static('skyblog/css/main.css') }}" />
+
+        {% block style  %}{% endblock %}   
+    </head>
+    <body>
+        <div>
+            {% block leftpanel  %}{% include "skyblog/module/leftpanel.html" %}{% endblock %}   
+            <div class="container">
+                {% block header  %}{% include "skyblog/module/header.html" %}{% endblock %}   
+                <div class="content">{% block content  %}{% endblock %}</div>   
+                {% block footer  %}{% include "skyblog/module/footer.html" %}{% endblock %}   
+            </div>
+        </div>
+        
+        <script data-main="{% block requirejs %}{% endblock %}" src="{{ static('skyblog/js/libs/require-2.1.11-min.js')  }}"></script>
+    </body>
+</html>

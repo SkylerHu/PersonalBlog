@@ -1,0 +1,33 @@
+.article-header {
+    border-left: 5px solid;
+    padding: 15px 0 15px 30px;
+    position: relative;
+    height: 30px;
+    color: #657b83;
+    margin-bottom: 10px;
+}
+.article-header .title {
+    color: #000;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+.article-summary {
+    line-height: 2;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/**分页**/
+.pagination {
+    padding: 10px;
+    width: 100%;
+}
+.step-links {
+    text-align: center;
+}
+.step-links a {
+    margin: 0 10px;
+}

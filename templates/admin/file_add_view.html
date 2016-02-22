@@ -1,0 +1,19 @@
+{% extends "admin/base_site.html" %}
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="/admin/">首页</a>
+        › <a href="/admin/skyblog/">Skyblog</a>
+        › <a href="/admin/skyblog/filemanager/">文件管理</a>
+        › 添加文件
+    </div>
+{% endblock %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="/static/skyblog/css/file_upload.css" />
+    <form action="{% url 'file_upload' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div>
+            {{ form.as_p }}
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+{% endblock %}

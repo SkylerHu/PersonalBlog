@@ -1,0 +1,33 @@
+{% extends "skyblog/main.html" %}
+
+{% block keywords %}{{ article.keywords }}{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ static('skyblog/css/article/article_sky.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ static('skyblog/css/article/article_detail.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ static('skyblog/css/article/pygments-monokai.css') }}" />
+{% endblock %}
+
+{% block content %}
+<div class="article_main">
+    <article class="article">
+        {% if article.show_title %}
+            <h1>{{ article.title }}</h1>
+            <div class="create_at"><time datetime="{{ article.create_at }}">{{ article.create_at }}</time></div>
+            {% if article.tags %}
+                <div class="tags">
+                    {% for tag in article.tags %}
+                        <span>{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div style="height: 15px;"></div>
+            {% endif %}
+            <div class="horizontal-line"></div>
+        {% endif %}
+        <div class="article_content">
+            {{ article.content|nl2br }}
+        </div>
+    </article>
+</div>
+{% endblock %}

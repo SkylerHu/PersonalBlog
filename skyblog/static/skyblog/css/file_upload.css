@@ -1,0 +1,21 @@
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+form p input {
+    margin-left: 0px;
+    width: 70%;
+    height: 2em;
+}
+form input[type="submit"] {
+    width: 100%;
+    margin: 30px auto 0 auto;
+}
+
+form p {
+    margin: 0 auto 20px auto;
+    size: 1.5em;
+    line-height: 2em;
+}
+
+
