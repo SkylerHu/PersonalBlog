@@ -16,3 +16,7 @@ article .create_at {
     top: 40px;
     right: 40px;
 }
+code {
+    background-color: #fff3eb;
+    padding: 2px 5px;
+}
