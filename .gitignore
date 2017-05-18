@@ -42,3 +42,4 @@ personalblog/settings.py
 skyblog/migrations/
 
 *.DS_Store
+.idea

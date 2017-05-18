@@ -24,7 +24,7 @@ def html_response(tpl):
             try:
                 data = fn(request, *args, **kwargs)
                 if settings.DEBUG and request.GET.get('debug'):
-                    return json_http_response(data)
+                    return JsonResponse(data, safe=False)
                 if isinstance(data, HttpResponse):
                     return data
                 return render(request, tpl, data)
